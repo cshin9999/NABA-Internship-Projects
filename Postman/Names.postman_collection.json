@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "7ff8419f-f8fb-4224-8789-7d27914cfc42",
+		"name": "Names",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://localhost:44357/api/Names/?firstName=a&lastName=b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44357/api/Names/namesearch/?firstName=a&lastName=b",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"Names",
+						"namesearch",
+						""
+					],
+					"query": [
+						{
+							"key": "firstName",
+							"value": "a"
+						},
+						{
+							"key": "lastName",
+							"value": "b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44357/api/Names/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"f1a5e226-e50a-4c2a-98eb-9df8c5f9734c\",\r\n    \"firstName\": \"e\",\r\n    \"lastName\": \"f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44357/api/Names/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"Names",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://localhost:44357/api/Names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44357/api/Names",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44357",
+					"path": [
+						"api",
+						"Names"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
